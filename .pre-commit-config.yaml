@@ -1,0 +1,13 @@
+default_stages: [commit, push]
+
+repos:
+  - repo: https://github.com/psf/black
+    rev: 21.6b0 # Replace by any tag/version: https://github.com/psf/black/tags
+    hooks:
+      - id: black
+
+  -   repo: https://gitlab.com/pycqa/flake8
+      rev: 3.9.2
+      hooks:
+      - id: flake8
+        args: ['--config=setup.cfg', '--ignore=E203, W503', '--max-line-length=300']
