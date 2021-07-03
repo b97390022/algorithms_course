@@ -1,16 +1,31 @@
-language: python
+matrix:
+
+
+language: node_js
+node_js:
+  - "lts/*"
+
 python:
   - "3.7"
-  
+
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+
 # command to run tests
 script:
   - pytest
 
-after_success:
-  - git config --global user.name "semantic-release (via TravisCI)"
-  - git config --global user.email "semantic-release@travis"
-  - pip install python-semantic-release
-  - semantic-release publish
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script:
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
+
