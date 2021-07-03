@@ -1,5 +1,5 @@
 [tool.semantic_release]
 version_variable = [
-    '__init__.py:__version__',
+    'setup.py:__version__',
     'docs/conf.py:version',
 ]
