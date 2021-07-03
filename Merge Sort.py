@@ -1,4 +1,5 @@
 # Course1-Week2-Merge sort
+import os
 
 
 def sort_and_count(L):
@@ -37,7 +38,8 @@ def merge_and_count_split(B, C):
 
 
 if __name__ == "__main__":
-    file_path = r"/content/drive/MyDrive/week2_text.txt"
+    # file_path = r"/content/drive/MyDrive/week2_text.txt"
+    file_path = os.path.abspath(os.getcwd()) + r"\txt files\Merge sort.txt"
 
     with open(
         file_path,
@@ -45,4 +47,4 @@ if __name__ == "__main__":
     ) as f:
         text_lists = [int(i.replace("\n", "")) for i in f.readlines()]
 
-    sort_and_count(text_lists)
+    print(sort_and_count(text_lists))

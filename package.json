@@ -1,0 +1,29 @@
+{
+  "name": "algorithms_course",
+  "version": "0.0.0-development",
+  "description": "this is the course of algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b97390022/algorithms_course.git"
+  },
+  "keywords": [
+    "algorithms"
+  ],
+  "author": "b97390022",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b97390022/algorithms_course/issues"
+  },
+  "homepage": "https://github.com/b97390022/algorithms_course#readme",
+  "devDependencies": {
+    "semantic-release": "^17.4.4"
+  },
+  "dependencies": {
+    "semantic-release-cli": "^5.4.3"
+  }
+}
