@@ -1,0 +1,5 @@
+[tool.semantic_release]
+version_variable = [
+    'semantic_release/__init__.py:__version__',
+    'docs/conf.py:version',
+]
