@@ -6,7 +6,6 @@ install:
   # Python test requirements
   - pip install --upgrade pip
   - pip install -r requirements.txt
-  - pip install nose coverage selenium
 
   # JavaScript test requirements
   - sudo add-apt-repository -y ppa:chris-lea/node.js
