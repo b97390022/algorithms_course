@@ -21,4 +21,5 @@ jobs:
       os: linux
       after_success: 
         - npx semantic-release
+        - npm run semantic-release
 
