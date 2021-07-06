@@ -51,7 +51,7 @@ def QuickSort(A, l, r, c=0, choose="Median"):
 
 if __name__ == "__main__":
 
-    # file_path = r'/content/drive/MyDrive/QuickSort.txt'
+    # file_path = r'/content/drive/MyDrive/QuickSort.txt' test
 
     file_path = os.path.abspath(os.getcwd()) + r"\txt files\QuickSort.txt"
 
