@@ -7,18 +7,10 @@ install:
   - pip install --upgrade pip
   - pip install -r requirements.txt
 
-  # JavaScript test requirements
-  - sudo add-apt-repository -y ppa:chris-lea/node.js
-  - sudo apt-get -y install nodejs
-  - sudo npm install -g grunt-cli
-  - sudo npm install -g bower
-  - sudo npm install
-
-before_script:
-  - bower install
-
 # command to run tests
 script:
+  - python --version
+  - node --version
   - pytest
 
 jobs:
@@ -26,11 +18,7 @@ jobs:
     # Define the release stage that runs semantic-release
     - stage: release
       node_js: lts/*
-      # Advanced: optionally overwrite your default `script` step to skip the tests
-      # script:
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - npx semantic-release
+      os: linux
+      after_success: 
+        - npm run semantic-release
 
