@@ -22,6 +22,8 @@ before_script:
 
 # command to run tests
 script:
+  - python --version
+  - node --version
   - pytest
 
 jobs:
@@ -30,7 +32,7 @@ jobs:
     - stage: release
       node_js: lts/*
       # Advanced: optionally overwrite your default `script` step to skip the tests
-      # script:
+      # script: skip
       deploy:
         provider: script
         skip_cleanup: true

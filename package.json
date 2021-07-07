@@ -1,6 +1,6 @@
 {
   "name": "algorithms_course",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "this is the course of algorithms",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/b97390022/algorithms_course#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "semantic-release": "^17.4.4"
   },
   "dependencies": {
