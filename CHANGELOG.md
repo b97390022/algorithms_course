@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/b97390022/algorithms_course/compare/v1.0.0...v1.1.0) (2021-07-07)
+
+
+### Features
+
+* **new:** push ([2eeb8d4](https://github.com/b97390022/algorithms_course/commit/2eeb8d45e2ebeb4517710ce01c93707b8171aaf3))
+* **new:** push ([31bd989](https://github.com/b97390022/algorithms_course/commit/31bd98941fcac496a31119ef9f025920379d4f7d))
+
 # 1.0.0 (2021-07-06)
 
 
